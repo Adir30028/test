@@ -9,7 +9,7 @@ discord_webhook_url = 'https://discord.com/api/webhooks/1290990002716807228/-F3m
 conn = sqlite3.connect('messages.db',check_same_thread=False)
 cursor = conn.cursor()
 cursor.execute('''
-     CREATE TABLE IF NOT EXISTS messages (
+     CREATE TABLE IF NOT EXISTS messagges (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         content TEXT,
         timestamp DATETIME
